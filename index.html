@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nasarawa State University Website.....">
+    <title>NSUK | Undergraduates</title>
+    <link rel="icon" href="/IMAGES/NSUK LOGO white BG.png">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .overall-container{
+            display: flex;
+        }
+        .left-flex{
+            flex: 50%;
+            color: white;
+            height: 100vh;
+            padding: 40px;
+            background-image:linear-gradient(rgba(9, 255, 184, 0.9),rgba(9, 224, 163, 0.9)), url(./IMAGES/NSUK\ matric\ 2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left-flex > img{
+            display: inline;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            outline: 7px solid white;
+        }
+        .left-flex > span{
+            display: inline;
+            margin-bottom: 40px;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .invisible-welcomtext{
+            display: none;
+        }
+        .left-flex > p{
+            padding-top: 40px;
+            font-size: 17px;
+        }
+        .left-flex footer{
+            margin-top: 380px;
+        }
+        .right-flex{
+            flex: 50%;
+            height: 100vh;
+            background-color: white;
+            padding-left: 130px;
+        }
+        header{
+            background-color: whitesmoke;
+            display: none;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            position: fixed;
+            top: 0px;
+        }
+        header p{
+            font-size: 20px;
+        }
+        .right-flex p:first-child{
+            font-size: 35px;
+            padding: 50px 0px 25px 0px;
+        }
+        .right-flex p:nth-child(2){
+            color:rgba(0, 0, 0, 0.315);
+            padding: 0px 0px 30px 0px;
+        }
+        .right-flex form input{
+            width: 80%;
+            height: 5%;
+            margin-bottom: 30px;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        .right-flex form input::placeholder{
+            padding: 10px;
+            color: rgba(0, 0, 0, 0.315);
+            font-size: 16px;
+        }
+        .right-flex form p:nth-child(3){
+            padding-bottom: 20px;
+        }
+        .right-flex p:nth-child(3) a{
+            text-decoration: none;
+            color: rgb(18, 168, 4);
+        }
+        .right-flex form button{
+            width: 80%;
+            border-radius: 15px;
+            height: 27px;
+            margin-bottom: 20px;
+        }
+        .right-flex form button a{
+            text-decoration: none;
+            color: white;
+        }
+        .right-flex p:last-child a{
+            text-decoration: none;
+            color: rgb(18, 168, 4);
+        }
+        .right-flex form button{
+            color: rgba(1,107,75,);
+            background-color: rgba(1,107,75,1);
+        }
+        .right-flex footer{
+            margin: 210px 0px 0px 90px;
+        }
+        @media all and (max-width:1000px){
+            header{
+                display: initial;
+            }
+            .invisible-welcomtext{
+            display: initial;
+            }
+            .right-flex p:first-child{
+            padding: 70px 0px 25px 0px;
+            }
+            .right-flex > p:nth-child(2){
+            background-color: rgba(1,107,75,1);
+            width: 80%;
+            font-size: 18px;
+            height: auto;
+            padding: 20px;
+            border-radius: 9px;
+            color: white;
+            margin-bottom: 30px;
+            }
+            .left-flex{
+                display: none;
+            }
+            .right-flex{
+                flex: 100%;
+            }
+            .right-flex footer{
+                margin: 0 auto;
+                width: 70%;
+                padding-top: 170px;
+                padding-bottom: 40px;
+            }
+        }
+        @media all and (max-width:700px){
+            .right-flex footer{
+                margin: 0 auto;
+                width: 50%;
+                padding-top: 70px;
+                padding-bottom: 40px;
+            }
+        }
+        @media all and (max-width:600px){
+            .right-flex footer{
+                margin: 0 auto;
+                width: 80%;
+                padding-top: 70px;
+                padding-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>School Portal</p>
+    </header>
+<div class="overall-container">
+    <div class="left-flex">
+        <img src="./IMAGES/NSUK_LOGO_NO_BG-.png" alt="NSUK LOGO">
+        <span>NASARAWA STATE UNIVERSITY, KEFFI</span>
+        <p>Welcome to the school portal. Some services on this portal are restricted, hence, only authenticated and authorized users can access them.</p>
+        <footer>
+            Knowledge and development...
+        </footer>
+    </div>
+
+    <div class="right-flex">
+        
+        <p>Login</p>
+        <p>Welcome! Please login below to continue 
+        <span class="invisible-welcomtext">with your user ID and password to continue. You can use biometric if you are using a supported device</span></p>
+        <form action="">
+            <input type="text" name="username" placeholder="User ID">
+            <input type="password" name="password" placeholder="Password">
+            <p>Forgot Password? <a href="./forgot-password.html">Click here</a> or <a href="" onclick="nofunction()">Switch Mode</a></p>
+            <button><a href="./dashboard.html">LOGIN</a></button>
+            <p>Not yet a student or a returning applicant? <a href="./register.html">Click here</a></p>
+        </form>
+        <footer>© 2023 Nasarawa State University, Keffi</footer>
+    </div>
+</div>
+<script>
+    function nofunction() {
+        window.alert('BIOMETRIC LOGIN IS TEMPORARILY DOWN, CHECK BACK LATER');
+    }
+</script>
+</body>
+</html>

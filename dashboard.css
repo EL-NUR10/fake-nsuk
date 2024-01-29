@@ -1,0 +1,196 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: green;
+}
+.overall-container {
+  background-color: green;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.left-flex {
+  flex: 20%;
+  background-color: rgba(1, 107, 75, 1);
+}
+.left-flex .logo {
+  display: flex;
+  margin: 40px 0px 20px 0px;
+  align-items: center;
+}
+.left-flex .logo img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0px 0px 0px 30px;
+}
+.left-flex .logo p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 0px 22px;
+}
+.left-flex .links {
+  margin-left: 25px;
+}
+.left-flex .links p {
+  color: rgba(255, 255, 255, 0.61);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.left-flex .links p:last-child {
+  padding: 0px 0px 10px 0px;
+}
+.left-flex .links p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.479);
+  padding-left: 30px;
+}
+.active {
+  border-bottom: 3px solid white;
+}
+.links p:hover {
+  background-color: gray;
+  width: 100%;
+  height: auto;
+}
+
+.right-flex {
+  flex: 80%;
+  background-color: whitesmoke;
+}
+.right-flex .right-flex-header {
+  max-width: 100%;
+  height: auto;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.356);
+}
+.right-flex .right-flex-header h1 {
+  display: inline;
+}
+.right-flex .right-flex-header .imageandtext {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.right-flex .right-flex-header .imageandtext img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.right-flex .right-flex-header .imageandtext p {
+  color: rgba(0, 0, 0, 0.582);
+  font-size: 18px;
+}
+.right-flex-body {
+  display: grid;
+  margin: 25px 16px 5px 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.486);
+}
+.right-flex-body .right-flex-body-1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  width: 100%;
+  height: auto;
+  font-size: 23px;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.126);
+}
+.right-flex-body .right-flex-body-1 p {
+  color: rgba(0, 0, 0, 0.726);
+  padding: 30px;
+}
+.right-flex-body .right-flex-body-2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  column-gap: 30px;
+  margin: 19px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.486);
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2a {
+  margin: 10px 0px 0px 10px;
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2a img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;  
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2b {
+  margin: 10px 0px 0px 0px;
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2b label {
+  display: inline;
+  color: rgba(165, 208, 223, 0.493);
+  font-weight: 600;
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2b input {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.166);
+  margin-bottom: 14px;
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2b i {
+  display: inline;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.627);
+}
+.format1 {
+  padding: 0px 0px 0px 312px;
+}
+.format2 {
+  padding: 0px 0px 0px 426px;
+}
+.format3 {
+  padding: 0px 0px 0px 399px;
+}
+.format4 {
+  padding: 0px 0px 0px 440px;
+}
+.format5 {
+  padding: 0px 0px 0px 225px;
+}
+.format6 {
+  padding: 0px 0px 0px 519px;
+}
+.format7 {
+  padding: 0px 0px 0px 377px;
+}
+.format8 {
+  padding: 0px 0px 0px 393px;
+}
+.format9 {
+  padding: 0px 0px 0px 330px;
+}
+.format10 {
+  padding: 0px 0px 0px 360px;
+}
+.format11 {
+  padding: 0px 0px 0px 330px;
+}
+
+.right-flex-body .right-flex-body-2 .right-flex-body-2c {
+  margin: 10px 10px 0px 0px;
+  color: blue;
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2c .card1 {
+  background-color: rgb(158, 214, 233);
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  padding: 10px;
+}
+.right-flex-body .right-flex-body-2 .right-flex-body-2c .card2 {
+  background-color: rgb(158, 214, 233);
+  height: auto;
+  border-radius: 3px;
+  padding: 10px;
+}
